@@ -2,6 +2,8 @@ const express = require('express');
 
 const app = express();
 
+let PORT = process.env.port || 8080;
+
 app.set('view engine', 'ejs');
 
 app.use(express.static('public'))
@@ -11,6 +13,6 @@ app.get('/', (req, res) => {
 });
 
 
-app.listen(6969, () => {
-    console.log(`Now running on http://127.0.0.1:6969`);
+app.listen(PORT, () => {
+    console.log(`Now running..`);
 });
