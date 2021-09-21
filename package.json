@@ -1,0 +1,18 @@
+{
+    "name": "weather-app",
+    "version": "1.0.0",
+    "description": "Weather app written in Express using EJS.",
+    "main": "app.js",
+    "scripts": {
+        "start": "nodemon app.js"
+    },
+    "author": "Alex Reed",
+    "license": "",
+    "devDependencies": {
+        "nodemon": "^2.0.12"
+    },
+    "dependencies": {
+        "ejs": "^3.1.6",
+        "express": "^4.17.1"
+    }
+}
