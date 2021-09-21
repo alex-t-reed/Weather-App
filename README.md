@@ -2,5 +2,4 @@
  
 Weather app written in Node using the Express framework with the EJS view engine.
 
-[https://mighty-reef-58342.herokuapp.com]
-(Weather App)
+[Weather App on Heroku](https://mighty-reef-58342.herokuapp.com)
