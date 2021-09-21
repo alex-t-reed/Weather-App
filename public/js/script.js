@@ -1,7 +1,7 @@
 document.getElementsByTagName("button")[0].addEventListener("click", () => {
     let input = document.getElementById("myInput").value;
     console.log(input);
-    fetch(`http://api.weatherapi.com/v1/current.json?key=9ac80f0042f94cf7b6a185734212109&q=${input}&aqi=no
+    fetch(`https://api.weatherapi.com/v1/current.json?key=9ac80f0042f94cf7b6a185734212109&q=${input}&aqi=no
     `)
         .then(function(response) {
             if (response.status !== 200) {
