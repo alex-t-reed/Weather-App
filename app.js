@@ -2,7 +2,6 @@ const express = require('express');
 
 const app = express();
 
-let PORT = process.env.port || 8080;
 
 app.set('view engine', 'ejs');
 
@@ -13,6 +12,6 @@ app.get('/', (req, res) => {
 });
 
 
-app.listen(PORT, () => {
+app.listen(3000, () => {
     console.log(`Now running..`);
 });
