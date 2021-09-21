@@ -17,6 +17,7 @@ document.getElementsByTagName("button")[0].addEventListener("click", () => {
                 document.getElementById('temp').innerHTML = (`${data.current.temp_f} &#8457;`)
                 document.getElementById('location').innerText = (`${data.location.name}, ${data.location.region}`);
                 document.getElementById("myInput").value = '';
+                document.getElementById("myInput").blur();
             });
         })
         .catch(function(err) {
