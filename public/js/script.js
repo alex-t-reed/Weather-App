@@ -9,6 +9,11 @@ document.getElementsByTagName("button")[0].addEventListener("click", () => {
                     "Looks like there was a problem. Status Code: " + response.status
                 );
                 document.getElementById('data').innerHTML = '';
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Something went wrong! Try again.'
+                })
                 return;
             }
 
@@ -27,7 +32,7 @@ document.getElementsByTagName("button")[0].addEventListener("click", () => {
 
 document.getElementById("myInput").addEventListener("keyup", function(event) {
     event.preventDefault();
-    if (event.keyCode === 13) {
+    if (event.keyCode === 13 && document.getElementById("myInput").value.length > 0) {
         document.getElementsByTagName("button")[0].click();
     }
 });
