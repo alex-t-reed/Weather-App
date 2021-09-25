@@ -19,6 +19,8 @@ document.getElementsByTagName("button")[0].addEventListener("click", () => {
 
             // Examine the text in the response
             response.json().then(function(data) {
+                console.log(data.current.condition.icon)
+                document.getElementById('condition').src = 'https:' + data.current.condition.icon;
                 document.getElementById('temp').innerHTML = (`${data.current.temp_f} &#8457;`)
                 document.getElementById('location').innerText = (`${data.location.name}, ${data.location.region}`);
                 document.getElementById("myInput").value = '';
